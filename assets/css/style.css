@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-section .btn-agregar {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section .btn-agregar:hover {
+  background-color: #218838;
+}
+
+/* Contador de las tareas */
+.contador-tareas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* TABLA/GRILLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* COLUMNAS DE LA TABLA */
+.id {
+  width: 10%;
+}
+
+.tarea {
+  width: 50%;
+  text-align: left;
+}
+
+.realizada {
+  width: 20%;
+}
+
+.acciones {
+  width: 20%;
+}
+
+
+/* COLORES ICONOS DE FONT AWESOME */
+.fa-trash-can {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.fa-trash-can:hover {
+  color: #c82333;
+}
+
+.fa-circle-check {
+  color: #28a745;
+  cursor: pointer;
+}
+
+.fa-circle-check.completada {
+  color: #17a2b8;
+}
+
+.fa-circle-check:hover {
+  color: #218838;
+}
+
+/* ALTERNAR FILAS CON COLORES DIFERENTES */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* LINEA TACHADA SOBRE TAREAS COMPLETADAS */
+.tarea.realizada {
+  text-decoration: line-through;
+  color: #6c757d;
+}

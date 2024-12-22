@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Ejercicio JS - To do List</title>
+</head>
+
+<body>
+  <div class="todo-container">
+    <h1>Todo List</h1>
+    <hr>
+    <div class="input-section">
+      <label for="nueva tarea">Nueva tarea</label>
+      <input type="text" id="nueva-tarea" placeholder="Escribe la tarea aquí">
+      <button class="btn-agregar">Agregar</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tarea</th>
+          <th>Realizada?</th>
+          <th>Eliminar?</th>
+        </tr>
+      </thead>
+      <tbody id="lista-tareas">
+        <!-- Aquí agregaremos las tareas desde js  -->
+      </tbody>
+    </table>
+
+    <div class="contador-tareas">
+      <p>Total tareas: <span class="total-tareas">0</span></p>
+      <p>Total realizadas: <span class="total-realizadas">0</span></p>
+    </div>    
+
+  </div>
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f5bdbb41e0.js"
+      crossorigin="anonymous"
+    ></script>
+
+  <!--Vinculamos el script-->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
